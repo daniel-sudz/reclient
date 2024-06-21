@@ -15,7 +15,7 @@ jobs:
     strategy:
       matrix:
         includescanner: ["goma", "clangscandeps"]
-        os: ["ubuntu-20.04", "macos-13", "macos-13-xlarge", "windows-2019"]
+        os: ["ubuntu-20.04", "macos-13", "macos-13-arm64", "windows-2019"]
     runs-on: ${{ matrix.os }}
     steps:
     # Clean up unused tools to have more disk space in the GitHub hosted runner.
